@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="wide wow-animation smoothscroll" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Site Title-->
+    <title>E-commerce product photo editing!</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css" />
+
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .invalid {
+        border: 2px solid red;
+      }
+  
+      .error-message {
+        color: crimson;
+        font-weight: bold;
+        font-size: 12px;
+        float: left;
+        text-align: left;
+      }
+  
+      .price-button-hover:hover {
+        background: #2ED3AE!important;
+      }
+  
+      .modal-close {
+        cursor: pointer;
+        position: absolute;
+        z-index: 1000;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        padding-left: 12px;
+        padding-top: 2px;
+        right: -20px;
+        margin-top: -20px!important;
+        font-weight: bold;
+        border: 2px solid #ffffff;
+      }
+  
+      .overlay {
+        border: none;
+        padding-top: 35px;
+        background-color: transparent;
+        text-align: center;
+        background-image: url(images/ajax-loader.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap" style="height: 124px;">
+            <nav class="rd-navbar rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static"
+                data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false"
+                data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="69px"
+                data-lg-stick-up-offset="1px">
+                <div class="container">
+                    <div class="rd-navbar-inner">
+                        <!-- RD Navbar Panel -->
+                        <div class="rd-navbar-panel">
+                            <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand-name" href="http://cutoutwiz.com/"><img src="images/logo.png"
+                                        alt="CutOutWiz" width="90" height="90"></a></div>
+                        </div>
+                        <!-- RD Navbar Nav-->
+                        <div class="rd-navbar-nav-wrap toggle-original-elements">
+                            <ul class="rd-navbar-nav">
+                                <li><a href="http://cutoutwiz.com/#home">Home</a></li>
+                                <li><a href="http://cutoutwiz.com/#features">Features</a></li>
+                                <li><a href="http://cutoutwiz.com/#industry_verticals">INDUSTRY VERTICALS</a></li>
+                                <li><a href="http://cutoutwiz.com/#how_we_work">HOW WE WORK</a></li>
+                                <li><a href="http://cutoutwiz.com/#price">PRICE</a></li>
+                                <li class="active"><a href="blog-home-2.html">Blog</a></li>
+                                <li><a href="http://cutoutwiz.com/#appsInt">APPS &amp; INTEGRATION</a></li>
+                                <li><a href="http://cutoutwiz.com/#faqs">FAQ</a></li>
+                                <li><a href="http://cutoutwiz.com/#contact">CONTACT US</a></li>
+                                <li><a style="cursor: pointer" class="login-btn">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="breadcrumbs-custom">
+        <div class="container">
+            <div class="shell">
+                <div class="breadcrumbs-custom__inner">
+                    <ul class="breadcrumbs-custom__path">
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a>E-commerce photography: picture perfect!</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-xxl text-center bg-image-2">
+        <div class="container">
+            <div class="shell nonstandart-post-header col-md-12">
+                <h2 style="text-transform: uppercase;color: white">E-commerce photography: <br>picture perfect!</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white section-md" style="padding-bottom: 0px;">
+        <div class="container">
+            <div class="shell">
+                <div class="range range-60 range-xs-center">
+                    <div class="col-md-7 section-divided__main">
+                        <h1>E-commerce Photography: Picture Perfect!</h1>
+                        <section class="section-sm post-single-body" style="text-align:justify; border: none;">
+                            <p>When selling products in the online medium, the idea is to connect with the consumer. It
+                                is
+                                critical to acknowledge that product images are the first point of contact with the
+                                audience/customer. A less than perfect image can affect buying decision... remember
+                                that
+                                the first impression can make it or break it. Is your product photography perfect to
+                                grab
+                                the attention and therefore desirability? Read on to find out more...</p>
+
+                            <p>Some websites settle with a default picture of the item. Higher number of product
+                                images,
+                                ensuring different angles attracts customers. Not to mention that better image quality
+                                has
+                                high impact on customer purchasing decision. Some products need details to be shown -
+                                pockets, zippers, needlework. The craftsmanship can exhibit why the product stands out.
+                                Often the insides of the item are not showcased, imagine a piece of luggage - where
+                                interior images matter. In other cases the size and scale cannot be understood if not
+                                photographed with a model. You may shoot a laptop in the hands of a model to show how
+                                small
+                                it really is, for example. Thus, the image can be understood in context. However, some
+                                products demand to be shot in the natural environment, for eg. jackets for the
+                                outdoors.
+                                Here it is important to note that the photo has to be taken with a shallow depth of
+                                field.
+                                In this way, the product is on focus, not the environment.</p>
+
+                            <!-- Quote default-->
+
+                            <p>After organizing products and shooting area, some make the mistake of not adequately
+                                preparing the items. Be prepared to spend adequate time prepping each item — even the
+                                smallest speck of dust will be visible in a product image. For example, if the item is
+                                jewelry, it is best to wipe down the pieces every time they are touched. Wearing cotton
+                                gloves may save time and reshoots. Specific clothing materials need ironing before the
+                                shoot to avoid looking crumpled.</p>
+
+                            <p>Inconsistent shooting is best avoided. Consistency is the key in product photography,
+                                and
+                                variations from product to product or shot to shot will distract your customer. So your
+                                lighting and the cropping style are best to remain the same in all the shots. Try to
+                                keep
+                                the background similar as much as possible, too. For most products, the “infinity
+                                curve” is
+                                an ideal way to have blank whiteness in the background with no horizon. Such a plain
+                                white
+                                or light gray background keeps the focus where it should be: on your product. For a
+                                sleek,
+                                modern look, you may use flat piece of white acrylic. Not to mention, all backgrounds
+                                must
+                                be clean and tidy. Also, unnecessary props remove focus from the item itself.</p>
+
+                            <p>It’s difficult to shoot highly reflective objects without capturing distracting
+                                reflections.
+                                Who wants to see a reflection of the camera on the shiny gadget? Adequate white screens
+                                in
+                                the studio can help rid of this problem. The size of images will vary depending on your
+                                website’s template, but 640 x 640 pixels is one standard size.</p>
+
+                            <p>Shaky images are produced due to shooting without a tripod… a tripod is a huge
+                                investment
+                                that can enhance quality and consistency. Which lens to use? This depends on the items
+                                -
+                                but wide angle lenses are best avoided. Once this specification is selected, research
+                                on
+                                the best distance to shoot from, to represent the subject as it appears in life.</p>
+
+                            <p>Wrong white balance makes the item look different under a range of backgrounds. Photos
+                                with
+                                bad light look gloomy, often not very clear and with a lot of grey, plus the colors can
+                                be
+                                faded as well.</p>
+
+                            <p>You can go a step further and add on a video of the product; if the item is more
+                                complicated
+                                with moving parts and pieces, this video will be huge bonus on the website.</p>
+
+                            <p>While it is easy to fix mistakes in post-production processing, advanced editing is time
+                                consuming and requires a high level of proficiency with cloning and healing tools. Thus
+                                it
+                                is ideal to correct as much as possible manually before the ecommerce photography
+                                shoot.
+                                Remember that massive changes will alter the features of the item. If you heighten the
+                                color, texture and boldness to an unnatural level, it will distort the expectations of
+                                the
+                                buyer. Surely you want to avoid a high product return rate - something that happens
+                                because
+                                a shirt bought online is not the exact shade of blue.</p>
+
+                            <p>Do note here that retouching done by someone less skilled can do more harm than good. If
+                                you
+                                lack the time or skill set to brush up your own images, consider hiring a
+                                post-production
+                                processing company for convenience. You can find companies specialized in Image
+                                retouching.
+                                They will cover different areas of image retouching such as background removal,
+                                retouching,
+                                color correction, and other technical fixes. If you stay always in rush by clients, the
+                                good news is there are companies giving 24 hours support for each day of a year.</p>
+
+                            <p>Speaking of visual marketing, studies have shown that 90% of information that comes to
+                                the
+                                brain is visual, and images are processed 60,000 times faster than text. Make use of
+                                this
+                                data and present the perfect shots that attract customers and loyalty. Great images can
+                                affect the credibility of your company tremendously.</p>
+                        </section>
+
+                        <section class="section-sm">
+                            <div class="range range-60 range-sm-justify">
+                                <div class="cell-sm-5 text-sm-left"><a class="unit unit-horizontal unit-spacing-md unit-middle"
+                                        href="blog-post-9.html">
+                                        <div class="unit__left"><span class="icon icon-md linear-icon-arrow-left"></span></div>
+                                        <div class="unit__body">
+                                            <p class="small">Photo editing mistakes you want to avoid</p>
+                                        </div>
+                                    </a></div>
+                                <div class="cell-sm-5 text-sm-right"><a class="unit unit-horizontal unit-spacing-md unit-middle"
+                                        href="blog-post-2.html">
+                                        <div class="unit__body">
+                                            <p class="small">Do you really need to pay a fortune for product
+                                                photography.html</p>
+                                        </div>
+                                        <div class="unit__right"><span class="icon icon-md linear-icon-arrow-right"></span></div>
+                                    </a></div>
+                            </div>
+                        </section>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pre footer section (Contacts and Social Media) start -->
+    <section class="pre-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="social-media-text">
+                        <img src="images/logo.png" class="img-responsive">
+                        <h4>Follow Us On</h4>
+                    </div>
+                    <div class="social-media-icon">
+                        <a href="#"><img src="images/facebook.webp" class="img-responsive"></a>
+                        <a href="#"><img src="images/twitter.webp" class="img-responsive"></a>
+                        <a href="#"><img src="images/LI.webp" class="img-responsive"></a>
+                        <a href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ/videos" target="_blank"><img
+                                src="images/youtube.webp" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="text-center">Address</h5>
+                    <p class="text-center">Navana DH Tower (2nd Floor),<br>Plot # 6, Panthapath, PS-Tejgaon,<br>Dhaka-1215,
+                        Bangladesh.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">Talk to us at</h5>
+                    <p class="text-center">+1 (415) 799-7876</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">Write to us at</h5>
+                    <!-- <a href="mailto:info@cutoutwiz.com"><p class="text-center">info@cutoutwiz.com</p></a> -->
+                    <p class="text-center"><a href="mailto:info@cutoutwiz.com">info@cutoutwiz.com</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">Skype</h5>
+                    <p class="text-center">cutoutwiz.support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pre footer section (Contacts and Social Media) end -->
+
+    <!-- main footer section start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p class="rights"><span>CutOutWiz ©</span><span>&nbsp;</span><span id="copyright-year">2019</span>.
+                        All Rights Reserved.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer section end -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Wow js -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
