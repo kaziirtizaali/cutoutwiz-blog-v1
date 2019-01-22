@@ -78,33 +78,38 @@
 
 <body>
 
+    <div id="page-loader">
+        <div class="  ">
+            <div class="cssload-speeding-wheel"></div>
+        </div>
+    </div>
+
     <header class="page-header">
         <!-- RD Navbar-->
-        <div class="rd-navbar-wrap" style="height: 124px;">
-            <nav class="rd-navbar rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
-                data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static"
-                data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false"
-                data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="69px"
-                data-lg-stick-up-offset="1px">
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed"
+                data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static"
+                data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true"
+                data-lg-stick-up="true" data-md-stick-up-offset="69px" data-lg-stick-up-offset="1px">
                 <div class="container">
                     <div class="rd-navbar-inner">
                         <!-- RD Navbar Panel -->
                         <div class="rd-navbar-panel">
-                            <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <!-- RD Navbar Brand-->
                             <div class="rd-navbar-brand"><a class="brand-name" href="http://cutoutwiz.com/"><img src="images/logo.png"
-                                        alt="CutOutWiz" width="90" height="90"></a></div>
+                                        alt="CutOutWiz" width="90" height="90" /></a></div>
                         </div>
                         <!-- RD Navbar Nav-->
-                        <div class="rd-navbar-nav-wrap toggle-original-elements">
+                        <div class="rd-navbar-nav-wrap">
                             <ul class="rd-navbar-nav">
                                 <li><a href="http://cutoutwiz.com/#home">Home</a></li>
                                 <li><a href="http://cutoutwiz.com/#features">Features</a></li>
                                 <li><a href="http://cutoutwiz.com/#industry_verticals">INDUSTRY VERTICALS</a></li>
                                 <li><a href="http://cutoutwiz.com/#how_we_work">HOW WE WORK</a></li>
                                 <li><a href="http://cutoutwiz.com/#price">PRICE</a></li>
-                                <li class="active"><a href="blog-home-2.html">Blog</a></li>
-                                <li><a href="http://cutoutwiz.com/#appsInt">APPS &amp; INTEGRATION</a></li>
+                                <li class="active"><a href="http://cutoutwiz.com/blog/index.html">Blog</a></li>
+                                <li><a href="http://cutoutwiz.com/#appsInt">APPS & INTEGRATION</a></li>
                                 <li><a href="http://cutoutwiz.com/#faqs">FAQ</a></li>
                                 <li><a href="http://cutoutwiz.com/#contact">CONTACT US</a></li>
                                 <li><a style="cursor: pointer" class="login-btn">Sign In</a></li>
@@ -313,8 +318,426 @@
     </footer>
     <!-- main footer section end -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- sticky social media section start -->
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://cutoutwiz.com/blog/blog-post-4.html" target="_blank"
+            OnClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=600'); return false;"
+            class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/share?url=https://cutoutwiz.com/blog/blog-post-4.html&amp;text=Photo Editing Logistics to Ensure Competitive Edge of Your Product/Brand&amp;"
+            target="_blank" OnClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=600'); return false;"
+            class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://cutoutwiz.com/blog/blog-post-4.html"
+            target="_blank" OnClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=600'); return false;"
+            class="linkedin"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <!-- sticky social media section end -->
+
+
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- PhotoSwipe Gallery-->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__cent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/iziModal.min.js"></script>
+
+
+    <script>
+        var upperCase = new RegExp('[A-Z]');
+        var lowerCase = new RegExp('[a-z]');
+
+        $(document).on("click", "#sign-in-btn", function () {
+            var invalid = true;
+            $("#my-sign-in-form").find(".form-control").each(function () {
+                if ($(this).val() == "") {
+                    $(this).addClass("input-invalid");
+                    invalid = false;
+                } else {
+                    $(this).removeClass("input-invalid");
+                }
+            });
+            return invalid;
+        });
+
+        $("#sign-in-up-modal").on("click", "#sign-in-tab", function () {
+            $(this).addClass("sign-in-active");
+            $("#sign-up-tab").removeClass("sign-in-active");
+            $("#sign-in-form").show();
+            $("#register-form,#forgot-div").hide();
+        });
+
+        $("#sign-in-up-modal").on("click", "#forgot-span", function () {
+            $(document).find("#forgot-div").show();
+            $(document).find("#sign-in-form,#popup-menu").hide();
+
+        });
+
+        function ValidateEmail(email) {
+            var expr =
+                /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            return expr.test(email);
+        };
+
+        $(document).on("click", "#reset-btn", function () {
+            if ($("#forgot-email").val() == "") {
+                $("#reset-msg").text("Please enter an email address").css("font-size,", "12px");
+                $("#forgot-email").addClass("input-invalid");
+                return;
+            }
+            if (!ValidateEmail($("#forgot-email").val())) {
+                $("#reset-msg").text("Please enter a valid email address").css("font-size,", "12px");
+                $("#forgot-email").addClass("input-invalid");
+                return;
+            }
+            var data = {
+                email: $("#forgot-email").val()
+            };
+
+            $("#reset-msg").text("");
+            $("#forgot-email").removeClass("input-invalid");
+
+            $.ajax({
+                url: 'https://app.cutoutwiz.com/Account/ForgotPassword',
+                type: 'POST',
+                data: data,
+                success: function (res) {
+                    if (res) {
+                        $("#forgot-div").hide();
+                        $("#register-confirmation").find("p").text(
+                            "A reset email has been sent to your email. Please check your email and follow instruction."
+                        ).css("color", "green").css("padding", "50px");
+                    } else {
+                        $("#forgot-div").hide();
+                        $("#register-confirmation").find("p").text(
+                            "Can not find your email. Try to register first.").css("color",
+                            "red").css("padding", "10px");
+                    }
+                }
+            });
+        });
+
+        $("#sign-in-up-modal").on("click", "#sign-up-tab", function () {
+            $("#sign-in-tab").removeClass("sign-in-active");
+            $(this).addClass("sign-in-active");
+            $("#sign-in-form,#forgot-div").hide();
+            $("#register-form").show();
+        });
+
+        $(document).on("click", "#sign-up-button", function () {
+            $("#register-form").find('input').each(function () {
+                if ($(this).val() == '') {
+                    $(this).addClass("input-invalid");
+                    $(document).find("#reg-error").text("Marked fields are required.");
+                } else {
+                    $(this).removeClass("input-invalid");
+                }
+            });
+            var data = {
+                firstName: $("#firstName").val(),
+                lastName: $("#lastName").val(),
+                regEmail: $("#regEmail").val(),
+                regPassword: $("#regPassword").val(),
+                confirmPassword: $("#confirmpassword").val()
+            }
+            if (data.regPassword != data.confirmPassword) {
+                $("#regPassword").addClass("input-invalid");
+                $("#confirmpassword").addClass("input-invalid")
+                $(document).find("#reg-error").text("Password mismatch.");
+                return;
+            }
+            if (!data.regPassword.match(upperCase) && !data.confirmPassword.match(upperCase)) {
+                if (!data.regPassword.match(upperCase)) {
+                    $("#regPassword").addClass("input-invalid");
+                }
+                if (!data.confirmPassword.match(upperCase)) {
+                    $("#confirmpassword").addClass("input-invalid");
+                }
+                $("#reg-error").show().text(
+                    "Password length must be 9 containing atleast one number,uppercase and lowercase letter."
+                );
+                return;
+            }
+            if (!data.regPassword.match(lowerCase) && !data.confirmPassword.match(lowerCase)) {
+                if (!data.regPassword.match(lowerCase)) {
+                    $("#regPassword").addClass("input-invalid");
+                }
+                if (!data.ConfirmPassword.match(lowerCase)) {
+                    $("#confirmpassword").addClass("input-invalid");
+                }
+                $("#reg-error").show().text(
+                    "Password length must be 9 containing atleast one number,uppercase and lowercase letter."
+                );
+                return;
+            }
+            if (!validatePassword(data.regPassword) && !validatePassword(data.confirmPassword)) {
+                if (!validatePassword(data.regPassword)) {
+                    $("#regPassword").addClass("input-invalid");
+                }
+                if (!validatePassword(data.ConfirmPassword)) {
+                    $("#confirmpassword").addClass("input-invalid");
+                }
+                $("#reg-error").show().text(
+                    "Password length must be 9 containing atleast one number,uppercase and lowercase letter."
+                );
+                return;
+            } else {
+                $("#confirmpassword").removeClass("input-invalid");
+                $("#regPassword").removeClass("input-invalid");
+            }
+            if (data.confirmPassword.length < 9 || data.regPassword.length < 9) {
+                if (data.confirmPassword.length < 9) {
+                    $("#regPassword").addClass("input-invalid");
+                }
+                if (data.regPassword.length < 9) {
+                    $("#confirmpassword").addClass("input-invalid");
+                }
+                $("#reg-error").show().text(
+                    "Password length must be 9 containing atleast one number,uppercase and lowercase letter."
+                );
+                return;
+            } else {
+                $(document).find("#reg-error").text("");
+                $.ajax({
+                    type: 'POST',
+                    url: "https://app.cutoutwiz.com/Account/Register",
+                    data: data,
+                    success: function (res) {
+                        if (res.status) {
+                            $("#register-form,#popup-menu").hide();
+                            $("#register-confirmation").css("padding", "10px");
+                            $("#register-confirmation").find('p').text(res.msg).css("color",
+                                "green").css("padding", "10px");
+                        } else {
+                            $("#register-form,#popup-menu").hide();
+                            $("#register-confirmation").find('p').text(res.msg).css("color", "red")
+                                .css("padding", "50px");
+                        }
+                    }
+                });
+            }
+        });
+
+        function validatePassword(pass) {
+            var pattern = /[^\w\s]/gi;
+            return $.trim(pass).match(pattern) ? true : false;
+        }
+        $("#modal,#sign-in-up-modal").iziModal({
+            closeOnEscape: true,
+            closeButton: true,
+            transitionIn: 'comingIn',
+            transitionOut: 'comingOut',
+            transitionInOverlay: 'fadeIn',
+            transitionOutOverlay: 'fadeOut',
+        });
+        $("#close-modal").click(function () {
+            $('#modal').iziModal('close');
+        });
+        $("#sign-modal-close").click(function () {
+            $("#sign-in-up-modal").iziModal('close');
+            setTimeout(function () {
+                $("#sign-in-form").show().addClass("sign-in-active");
+                $("#forgot-div,#register-form,#register-form").hide();
+                $("#popup-menu").show();
+                $("#register-confirmation").find("p").text("");
+            }, 1000)
+        });
+
+        $(".login-btn").click(function () {
+            $('#sign-in-up-modal').iziModal('open');
+            if ($(this).text() == "Sign Up") {
+                $("#sign-up-tab").click();
+            } else {
+                $("#sign-in-tab").click();
+            }
+        });
+        $(document).ready(function () {
+            $(window).resize();
+            //	getFAQ();
+        });
+        // function getFAQ() {
+        // 	$.ajax({
+        // 		type: 'GET',
+        // 		url: 'faqs.php',
+        // 		success: function (res) {
+        // 			if (res != false) {
+        // 				$("#ques_ans").append(res);
+        // 			}
+        // 		}
+        // 	});
+        // }
+        $("#ques_ans").on("click", ".panel-heading", function () {
+            $(".panel-heading").each(function () {
+
+            });
+
+            $("#ques_ans").find(".panel-body").each(function () {
+                if ($(this).is(":visible")) {
+                    $(this).toggle("wow fadeIn");
+                    $(this).parent().find('i').removeClass('glyphicon glyphicon-chevron-down').addClass(
+                        'glyphicon glyphicon-chevron-right');
+                }
+            });
+            $(this).find('i').removeClass('glyphicon glyphicon-chevron-right').addClass(
+                'glyphicon glyphicon-chevron-down');
+            $(this).parent().find('.panel-body').toggle("wow fadeIn");
+        });
+        $(window).resize(function () {
+            if (window.innerWidth > 992 && window.innerWidth < 1200) {
+                $("#laptop").removeClass("push-down").css("margin-top", "29%");
+            }
+            if (window.innerWidth > 1200 && window.innerWidth < 1280) {
+                $("#laptop").removeClass("push-down").css("margin-top", "13%");
+            }
+            if (window.innerWidth > 1280 && window.innerWidth < 1400) {
+                $("#laptop").removeClass("push-down").css("margin-top", "10%");
+            }
+            if (window.innerWidth > 1400 && window.innerWidth < 1500) {
+                $("#laptop").removeClass("push-down").css("margin-top", "6%");
+            }
+            if (window.innerWidth > 1500 && window.innerWidth < 1600) {
+                $("#laptop").removeClass("push-down").css("margin-top", "4%");
+            }
+            if (window.innerWidth > 1600 && window.innerWidth < 1700) {
+                $("#laptop").removeClass("push-down").css("margin-top", "7%");
+            }
+            if (window.innerWidth > 1700 && window.innerWidth < 1800) {
+                $("#laptop").removeClass("push-down").css("margin-top", "4%");
+            }
+            if (window.innerWidth > 1800 && window.innerWidth < 1900) {
+                $("#laptop").removeClass("push-down").css("margin-top", "14%");
+            }
+        });
+        $(document).on("click", "#btn-contact-us", function (e) {
+            e.preventDefault();
+            var validEmail = false;
+            var data = {
+                u_name: $("#u_name").val(),
+                u_email: $("#u_email").val(),
+                subj: $("#subj").val(),
+                message: $("#message").val()
+            };
+            $(".clear-text").each(function () {
+                if ($(this).val() == "") {
+                    $(this).addClass("invalid");
+                    if ($(this).parent().find(".error-message").length <= 0) {
+                        $(this).parent().prepend('<p class="error-message">This field is required.</p>');
+                    }
+                } else {
+                    $(this).removeClass("invalid").parent().find(".error-message").remove();
+                }
+                if ($(this).attr("type") == "email" && $(this).val() != "") {
+                    var pattern =
+                        /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+                    var valid = $.trim($(this).val()).match(pattern) ? true : false;
+                    validEmail = valid;
+                    if (valid) {
+                        $(this).removeClass("invalid").parent().find(".error-message").remove();
+                    } else {
+                        $(this).removeClass("invalid").parent().find(".error-message").remove();
+                        $(this).parent().prepend(
+                            '<p class="error-message">Please enter a valid email address.</p>');
+                    }
+                }
+
+            });
+            if (data.u_name != "" && data.u_email != "" && data.subj != "" && data.message != "" && validEmail) {
+                $('#modal').iziModal('open');
+                $.ajax({
+                    type: 'POST',
+                    url: 'confirm.php',
+                    data: data,
+                    success: function (res) {
+                        if (res == true) {
+
+                            $(".clear-text").each(function () {
+                                $(this).val('');
+                            });
+                        }
+                    },
+                    error: function () {}
+                });
+            } else {
+                /*$.toast({
+      text : "<p style='font-size:14px'>Please fillup all field with valid data.</p>",
+      hideAfter : false,
+      position : 'mid-center',
+      bgColor:"#c6960f",
+      showHideTransition : 'slide', 
+      });*/
+            }
+        });
+        $(document).on("click", ".close-jq-toast-single", function () {
+            $(".jq-toast-wrap").remove();
+            $("#overlay_div").removeClass("overlay");
+        });
+        $("#overlay_div").click(function () {
+            $(".close-jq-toast-single").click();
+        });
+        $("#sign-in-btn").click(function () {
+            var data = {
+                email: $("#useremail").val(),
+                password: $("#userpassword").val()
+            };
+            var url = "http://app.cutoutwiz.com/Account/ThirdPartyPost";
+            $.ajax({
+                url: url,
+                data: data,
+                type: 'POST',
+                success: function (res) {
+                    if (res == true) {
+                        location.href = "http://app.cutoutwiz.com/Dashboard/PhotoGallery"
+                    }
+                }
+            });
+        });
+        $(".clear-button").hover(function () {
+            $(this).find('i').css("color", "white");
+        }).mouseleave(function () {
+
+            $(this).find('i').css("color", "#08D7AD");
+        });
+    </script>
+
+    <div id="modal,"></div>
+    <a href="#" id="ui-to-top" class="ui-to-top active"></a>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Wow js -->
