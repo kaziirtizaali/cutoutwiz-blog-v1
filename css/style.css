@@ -3258,7 +3258,7 @@ a.thumbnail-classic-title:hover {
 }
 
 .breadcrumbs-custom {
-    position: relative;
+    /* position: relative; */
     background: #f8f8f8;
     z-index: 1;
 }
